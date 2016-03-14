@@ -8,12 +8,14 @@ public class SpawnCar : MonoBehaviour {
 	public float timeDelay;
 	public float ellapsedTime;
 	public bool movingLeft;
+	public float carSpeed;
 
 
 	// Use this for initialization
 	void Start () {
 		ellapsedTime = 0;
 		timeDelay = Random.Range (1f, 2.5f);
+		carSpeed = Random.Range (0.01f, 0.09f);
 	}
 	
 	// Update is called once per frame
@@ -26,7 +28,7 @@ public class SpawnCar : MonoBehaviour {
 			GameObject newBlock = Instantiate (carPrefab) as GameObject;
 			newBlock.transform.position = spawnPosition;
 			newBlock.GetComponent<CarControl> ().speed = .03f;
-			newBlock.GetComponent<CarControl> ().carSpeed = 0.05f;
+			newBlock.GetComponent<CarControl> ().carSpeed = this.carSpeed;
 			newBlock.GetComponent<CarControl> ().movingLeft = this.movingLeft;
 			if (!movingLeft) {
 				Vector3 rot = newBlock.transform.rotation.eulerAngles;
