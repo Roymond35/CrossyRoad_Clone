@@ -9,6 +9,7 @@ public class SpawnCar : MonoBehaviour {
 	public float ellapsedTime;
 	public bool movingLeft;
 	public float carSpeed;
+	public const int MAX_CARS = 3;
 
 
 	// Use this for initialization
@@ -20,14 +21,14 @@ public class SpawnCar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		int numberCars = this.transform.childCount;
 		ellapsedTime += Time.deltaTime;
 		spawnPosition = new Vector3 (this.transform.position.x, spawnPosition.y, spawnPosition.z);
-		if (ellapsedTime > timeDelay) {
+		if (ellapsedTime > timeDelay && numberCars < MAX_CARS) {
 			ellapsedTime = 0;
 			GameObject newBlock = Instantiate (carPrefab) as GameObject;
 			newBlock.transform.position = spawnPosition;
-			newBlock.GetComponent<CarControl> ().speed = .03f;
+			//newBlock.GetComponent<CarControl> ().speed = .03f;
 			newBlock.GetComponent<CarControl> ().carSpeed = this.carSpeed;
 			newBlock.GetComponent<CarControl> ().movingLeft = this.movingLeft;
 			if (!movingLeft) {
@@ -36,6 +37,7 @@ public class SpawnCar : MonoBehaviour {
 				newBlock.transform.rotation = Quaternion.Euler(rot);
 			}
 			newBlock.GetComponent<CarControl> ().started = true;
+			newBlock.transform.parent = this.transform;
 		}
 	}
 }
