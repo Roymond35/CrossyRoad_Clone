@@ -26,7 +26,6 @@ public class Spawner : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (blockIn);
 		if (!blockIn) {
 			int nextNum = Random.Range (0, desiredBlocks.Length);
 			if (counter > 1) {

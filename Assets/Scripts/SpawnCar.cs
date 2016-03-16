@@ -40,4 +40,8 @@ public class SpawnCar : MonoBehaviour {
 			newBlock.transform.parent = this.transform;
 		}
 	}
+
+	void OnCollisionEnter(Collision c){
+		Debug.Log (c.gameObject.name);
+	}
 }

@@ -51,4 +51,13 @@ public class PlayerMoving : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 	}
+
+	void OnCollisionEnter(Collision c){
+		string tag = c.gameObject.tag;
+		Debug.Log (tag);
+		Debug.Log (c.gameObject.name);
+//		if (tag == "Water" || tag == "Car") {
+//			Destroy (this.gameObject);
+//		}
+	}
 }

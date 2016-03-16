@@ -47,6 +47,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CarControl.cs" />
      <Compile Include="Assets\Scripts\MoveBlock.cs" />
+     <Compile Include="Assets\Scripts\PadSpawner.cs" />
      <Compile Include="Assets\Scripts\PlayerMoving.cs" />
      <Compile Include="Assets\Scripts\SpawnCar.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
