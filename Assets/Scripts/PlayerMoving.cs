@@ -38,10 +38,14 @@ public class PlayerMoving : MonoBehaviour {
 
 
 		if (Input.GetKeyDown (KeyCode.A)) {
-			this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z-1);
+			if (this.transform.position.z > -5) {
+				this.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z - 1);
+			}
 		}
 		if (Input.GetKeyDown (KeyCode.D)) {
-			this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z+1);
+			if (this.transform.position.z < 5) {
+				this.transform.position = new Vector3 (this.transform.position.x, this.transform.position.y, this.transform.position.z + 1);
+			}
 		}
 
 		if (this.transform.position.z > 5 || this.transform.position.z < -5) {

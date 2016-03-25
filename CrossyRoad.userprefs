@@ -1,13 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerMoving.cs">
     <Files>
+      <File FileName="Assets\Scripts\BuildingProperties.cs" Line="25" Column="109" />
       <File FileName="Assets\Scripts\LogSpawner.cs" Line="52" Column="3" />
-      <File FileName="Assets\Scripts\LogControl.cs" Line="6" Column="1" />
-      <File FileName="Assets\Scripts\PlayerMoving.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CarControl.cs" Line="7" Column="21" />
-      <File FileName="Assets\Scripts\Spawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LogControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMoving.cs" Line="46" Column="35" />
+      <File FileName="Assets\Scripts\CarControl.cs" Line="17" Column="129" />
+      <File FileName="Assets\Scripts\Spawner.cs" Line="26" Column="2" />
       <File FileName="Assets\Scripts\MoveBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpawnBuilding.cs" Line="12" Column="49" />
+      <File FileName="Assets\Scripts\SpawnCar.cs" Line="43" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
