@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LogControl.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets\Scripts\LogControl.cs" Line="27" Column="1" />
-      <File FileName="Assets\Scripts\LogSpawner.cs" Line="35" Column="34" />
+      <File FileName="Assets\Scripts\LogSpawner.cs" Line="52" Column="3" />
+      <File FileName="Assets\Scripts\LogControl.cs" Line="6" Column="1" />
       <File FileName="Assets\Scripts\PlayerMoving.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpawnCar.cs" Line="25" Column="3" />
-      <File FileName="Assets\Scripts\CarControl.cs" Line="25" Column="1" />
+      <File FileName="Assets\Scripts\CarControl.cs" Line="7" Column="21" />
       <File FileName="Assets\Scripts\Spawner.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MoveBlock.cs" Line="1" Column="1" />
     </Files>
